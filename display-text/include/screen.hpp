@@ -1,5 +1,5 @@
 class Screen
 {
 public:
-    void display();
+    void display(char *text);
 };

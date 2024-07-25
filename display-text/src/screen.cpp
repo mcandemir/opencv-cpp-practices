@@ -3,11 +3,11 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/highgui.hpp>
 
-void Screen::display()
+void Screen::display(char* text)
 {
     cv::Mat img(512, 512, CV_8UC3, cv::Scalar(0));
 
-    cv::putText(img, "Hello, OpenCV!",
+    cv::putText(img, text,
                 cv::Point(10, img.rows / 2),
                 cv::FONT_HERSHEY_DUPLEX,
                 1.0,
